@@ -56,13 +56,14 @@ public class Shiritori<T extends Words> {
                     System.out.println("Wyraz zakończony niedozwoloną literą. Dla kontynuacji wstawione a");
                     String a = "a";
                     words.add(new Words(a));
-                    score.setPlayersPoints(pointsContainer, areThisIsMyPoints);
                 }
+                score.setPlayersPoints(pointsContainer, areThisIsMyPoints);
             } else {
                 if (add) {
                     words.add(actualWord);
-                    score.setPlayersPoints(pointsContainer, areThisIsMyPoints);
+
                 }
+                score.setPlayersPoints(pointsContainer, areThisIsMyPoints);
             }
             reset();
         }
